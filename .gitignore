@@ -1,0 +1,49 @@
+
+# CLion
+.idea/
+*.iml
+
+# CMake build directories
+cmake-build-*/
+_debug/
+_release/
+build/
+out/
+_lnx_dbg/
+_lnx_rel/
+_win_dbg/
+_win_rel/
+
+# CMake generated files
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+compile_commands.json
+CTestTestfile.cmake
+Testing/
+
+# Compiled objects and libraries
+*.obj
+*.o
+*.a
+*.lib
+*.dll
+*.so
+*.so.*
+*.dylib
+*.exe
+*.pdb
+*.ilk
+*.exp
+
+# Test and benchmark output
+coverage/
+*.gcda
+*.gcno
+*.profraw
+*.profdata
+
+# Temporary files
+*.tmp
+*.bak
+*.log
