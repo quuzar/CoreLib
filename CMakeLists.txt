@@ -42,6 +42,8 @@ target_include_directories(CoreLib
 add_executable(CoreLibTest src/main.cpp)
 target_link_libraries(CoreLibTest PRIVATE CoreLib)
 
+target_compile_definitions(CoreLib PUBLIC NOMINMAX)
+
 include(CTest)
 
 if(BUILD_TESTING)
