@@ -179,5 +179,4 @@ namespace core::win {
     private:
         HANDLE handle_{INVALID_HANDLE_VALUE};
     };
-
 }

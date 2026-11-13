@@ -1,6 +1,4 @@
-
 #include "win/file.hpp"
-
 #include <exception>
 #include <limits>
 
@@ -545,5 +543,4 @@ namespace core::win {
 
         return 0;
     }
-
 }
