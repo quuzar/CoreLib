@@ -1,4 +1,5 @@
 cmake_minimum_required(VERSION 4.0)
+
 project(CoreLib LANGUAGES CXX)
 
 set(CMAKE_CXX_STANDARD 23)
@@ -40,3 +41,9 @@ target_include_directories(CoreLib
 
 add_executable(CoreLibTest src/main.cpp)
 target_link_libraries(CoreLibTest PRIVATE CoreLib)
+
+include(CTest)
+
+if(BUILD_TESTING)
+    add_subdirectory(tests/${PLATFORM})
+endif()
