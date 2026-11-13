@@ -8,6 +8,8 @@ add_executable(CoreLibTests
         test_core_thread.cpp
 )
 
+target_compile_definitions(CoreLibTests PUBLIC NOMINMAX)
+
 target_link_libraries(CoreLibTests PRIVATE
         CoreLib
         Catch2::Catch2WithMain
