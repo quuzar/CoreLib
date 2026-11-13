@@ -2,6 +2,10 @@ find_package(Catch2 3 CONFIG REQUIRED)
 
 add_executable(CoreLibTests
         test_core_file.cpp
+        test_core_mapping.cpp
+        test_core_memory.cpp
+        test_core_sync.cpp
+        test_core_thread.cpp
 )
 
 target_link_libraries(CoreLibTests PRIVATE
